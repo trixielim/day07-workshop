@@ -1,0 +1,76 @@
+/*
+.contact_form {
+
+} */
+
+.contact_form h1, .contact_form label {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.notification{
+    color:red;
+    display: block;
+}
+
+.contact_form label{
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 3px;
+    display: inline-block;
+}
+
+.contact_form input {
+    width: 200px;
+    height: 35px;
+}
+
+.contact_form textarea {
+    width: 1000px;
+    padding: 5px;
+    height: 200px;
+}
+
+.contact_form input, .contact_form textarea {
+    border: 2px solid grey;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+
+.contact_form input:focus, .contact_form textarea:focus {
+    background-color: yellow;
+}
+
+.contact_form input:required, .contact_form textarea:required{
+    background: white url(../day7_resources/red_asterisk.png) no-repeat 98% center;
+}
+
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid{
+    background: white url(../day7_resources/invalid.png) no-repeat 99% center;
+}
+
+.contact_form input:valid, .contact_form textarea:valid{
+    background: white url(../day7_resources/valid.png) no-repeat 99% center;
+}
+
+.form_hint{
+    background: palevioletred;
+    border-radius: 2px 2px 2px 2px;
+    color: white;
+    margin-left: 0px;
+    padding: 1px 6px;
+}
+
+.form_hint before {
+    content: "\25B9";
+    color:white;
+}
+
+.contact_form input:required:valid + .form_hint{
+    background: white;
+    color: white;
+}
+
+.contact_form textarea:required:valid + .form_hint{
+    background: white;
+    color: white;
+}
